@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/globals/app_colors.dart';
+// import 'package:my_portfolio/globals/app_colors.dart';
 
 class HelperClass extends StatelessWidget {
   final Widget mobile;

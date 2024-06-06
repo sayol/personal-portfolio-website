@@ -7,7 +7,7 @@ import '../globals/app_text_styles.dart';
 import '../globals/constants.dart';
 
 class MyPortfolio extends StatefulWidget {
-  const MyPortfolio({Key? key}) : super(key: key);
+  const MyPortfolio({super.key});
 
   @override
   State<MyPortfolio> createState() => _MyPortfolioState();

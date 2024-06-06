@@ -11,18 +11,21 @@ import '../globals/app_text_styles.dart';
 import '../globals/constants.dart';
 
 class MainDashBoard extends StatefulWidget {
-  const MainDashBoard({Key? key}) : super(key: key);
+  // const MainDashBoard({Key? key}) : super(key: key);
+  const MainDashBoard({super.key});
 
   @override
-  _MainDashBoardState createState() => _MainDashBoardState();
+  State<MainDashBoard> createState() => _MainDashBoardState();
 }
 
 class _MainDashBoardState extends State<MainDashBoard> {
   final ItemScrollController _itemScrollController = ItemScrollController();
-  final ItemPositionsListener itemPositionsListener = ItemPositionsListener.create();
-  final ScrollOffsetListener scrollOffsetListener = ScrollOffsetListener.create();
-  final onMenuHover = Matrix4.identity()..scale(1.0);
-  final menuItems = <String>[
+  final ItemPositionsListener itemPositionsListener =
+      ItemPositionsListener.create();
+  final ScrollOffsetListener scrollOffsetListener =
+      ScrollOffsetListener.create();
+  final Matrix4 onMenuHover = Matrix4.identity()..scale(1.0);
+  final List<String> menuItems = <String>[
     'Home',
     'About',
     'Services',
@@ -32,7 +35,7 @@ class _MainDashBoardState extends State<MainDashBoard> {
 
   var menuIndex = 0;
 
-  final screensList = const <Widget>[
+  final List<Widget> screensList = const <Widget>[
     HomePage(),
     AboutMe(),
     MyServices(),

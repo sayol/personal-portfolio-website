@@ -10,7 +10,7 @@ import 'package:my_portfolio/helper%20class/helper_class.dart';
 import 'package:my_portfolio/widgets/profile_animation.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   State<HomePage> createState() => _HomePageState();

@@ -9,7 +9,7 @@ import 'package:my_portfolio/helper%20class/helper_class.dart';
 import '../globals/app_text_styles.dart';
 
 class MyServices extends StatefulWidget {
-  const MyServices({Key? key}) : super(key: key);
+  const MyServices({super.key});
 
   @override
   State<MyServices> createState() => _MyServicesState();
